@@ -1,3 +1,11 @@
 {
-    "gitdoc.enabled": false
+    "gitdoc.enabled": false,
+    "workbench.colorCustomizations": {
+        "terminal.background": "#1E1E1E",
+        "terminal.foreground": "#CCCCCC",
+        "terminalCursor.background": "#CCCCCC",
+        "terminalCursor.foreground": "#CCCCCC",
+        "minimap.background": "#00000000",
+        "scrollbar.shadow": "#00000000"
+    }
 }
