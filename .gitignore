@@ -1,3 +1,5 @@
 /scratch.sce
 /testscilab.sce
-.vscode
+vscode
+/.vscode
+/.vscode/settings.json
