@@ -19,7 +19,13 @@ end
 disp(yk)
 
 // Exercice 2
-n=10
+n=4
+eps=10**-10
+kmax=100
+
+A=(7,-2,-1,0;-2,8-3,-1;-1,-3,10,-2;0,-1,-2,6)
+b=(-1;3;2;-4)
+
 x0=zeros(n,1)
 r0=b-A.*x0
 p0=r0
@@ -33,4 +39,12 @@ nrk=nr0
 
 while nrk/nr0>eps & k<kmax
     qk=A.*pk
-    ak
+    ak=norm(rk,rk)/norm(pk,qk)
+    xk=xk+ak*pk
+    rk2=rk
+    rk=rk-ak*qk
+    bk=norm(rk,rk)/norm(rk2,rk2)
+    pk=rk+bk*pk
+    nrk=norm(rk)
+    k=k+1
+end
