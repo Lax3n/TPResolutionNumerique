@@ -39,11 +39,11 @@ nrk=nr0
 
 while nrk/nr0>eps & k<kmax
     qk=A.*pk
-    ak=norm(rk,rk)/norm(pk,qk)
+    ak=(rk'*rk)/(pk'*qk)
     xk=xk+ak*pk
     rk2=rk
     rk=rk-ak*qk
-    bk=norm(rk,rk)/norm(rk2,rk2)
+    bk=(rk'*rk)/(rk2'*rk2)
     pk=rk+bk*pk
     nrk=norm(rk)
     k=k+1
