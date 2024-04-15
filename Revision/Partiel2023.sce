@@ -27,7 +27,7 @@ A=[7, -2, -1, 0 ; -2 , 8, -3, -1; -1, -3, 10, -2; 0, -1, -2, 6]
 b=[-1; 3; 2; -4]
 
 x0=zeros(n,1)
-r0=b-A.*x0
+r0=b-A*x0
 p0=r0
 nr0=norm(r0)
 k=0
@@ -38,13 +38,14 @@ pk=p0
 nrk=nr0
 
 while nrk/nr0>eps & k<kmax
-    qk=A.*pk
+    qk=A*pk
     ak=(rk'*rk)/(pk'*qk)
-    xk=xk+ak*pk
+    xk=xk+ak.*pk
     rk2=rk
-    rk=rk-ak*qk
+    rk=rk-ak.*qk
     bk=(rk'*rk)/(rk2'*rk2)
-    pk=rk+bk*pk
+    pk=rk+bk.*pk
     nrk=norm(rk)
     k=k+1
 end
+disp(xk)
