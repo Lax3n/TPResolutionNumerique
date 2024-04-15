@@ -1,12 +1,13 @@
 n=10
 
-function s=salut(n,t,z)
+function s=salut(2,t,z)
     disp(0:2:n)
     for i =0:2:n
         disp(i)
     end
+    disp(n)
     s=i 
 endfunction
 
 
-salut(n,23,4)
+salut(2,23,4)
