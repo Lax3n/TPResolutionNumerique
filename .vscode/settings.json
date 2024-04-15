@@ -1,5 +1,5 @@
 {
-    "gitdoc.enabled": false,
+    "gitdoc.enabled": true,
     "workbench.colorCustomizations": {
         "terminal.background": "#1E1E1E",
         "terminal.foreground": "#CCCCCC",
