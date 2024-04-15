@@ -37,7 +37,7 @@ rk=r0
 pk=p0
 nrk=nr0
 
-while nrk/nr0>eps & k<kmax
+while nrk/nr0>eps & k<kmax 
     qk=A*pk
     ak=(rk'*rk)/(pk'*qk)
     xk=xk+ak.*pk
