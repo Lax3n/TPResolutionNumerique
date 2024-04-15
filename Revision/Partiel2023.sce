@@ -48,4 +48,5 @@ while nrk/nr0>eps & k<kmax
     nrk=norm(rk)
     k=k+1
 end
+
 disp(xk)
