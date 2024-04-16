@@ -60,6 +60,7 @@ function s=f(x)
     s=x.*(1-x)
 endfunction
 
+i=1
 b=f(i/n+1)
 
 // 3.
@@ -67,9 +68,10 @@ u=0
 N=100
 eps=10**-8
 
-
+k=0
 while norm(b-A*u)<eps | k>=N
     u=u+(b/2)
+    k=k+1
 end
 
 disp(u)
