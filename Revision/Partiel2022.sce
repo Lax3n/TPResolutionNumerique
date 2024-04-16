@@ -47,8 +47,8 @@ end
 // Exercice 2
 
 // 1.
-u=eyes(n)
-v
+u=2.*eyes(n)
+minf=tril()
 
 // 2.
 
