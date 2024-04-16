@@ -49,12 +49,25 @@ clear;
 // 1.
 n=5
 u=2.*eye(n,n)
-v=-ones(n-2,1)
-A=u+diag(v,2)+diag(v,-2)
+v=-ones(n-1,1)
+A=u+diag(v,1)+diag(v,-1)
 disp(A)
 
 // disp(A(3,2))
 
 // 2.
+function s=f(x)
+    s=x.*(1-x)
+endfunction
+
+b=f(i/n+1)
+
+// 3.
+u=0
+N=100
+eps=10**-8
+
+while norm(b-A*u)<eps | k>=N
+    
 
 
