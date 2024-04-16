@@ -64,6 +64,7 @@ endfunction
 // b=f(i/n+1)
 
 // 3.
+clear;
 u=0
 N=10
 eps=10**-8
