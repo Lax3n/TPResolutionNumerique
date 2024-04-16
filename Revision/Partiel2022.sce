@@ -64,7 +64,7 @@ endfunction
 // b=f(i/n+1)
 
 // 3.
-// clear;
+
 u=zeros(n,1)
 N=10
 eps=10**-8
@@ -75,15 +75,23 @@ end
 
 function s=somme(i)
     for j=1:n
+        s=s+A(i,j).*u(j)
+    end
+endfunction
 
 
 k=0
 while norm(b-A*u)<eps | k>=N
     for i=1:n
-        u(i)=u(i)+(b/2)
+        u(i)=u(i)+(b(i)-somme(i))/A(i,i)
     k=k+1
+    end
 end
 
 disp(u)
+
+// 4.
+// Il résoud des problème du style Ax=b dans Rn
+// xk est donc le vecteur solution de cette equation
 
 
