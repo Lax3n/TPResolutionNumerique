@@ -73,10 +73,14 @@ for i=1:n
     b(i)=f(i/n+1)
 end
 
+function s=somme(i)
+    for j=1:n
+
 
 k=0
 while norm(b-A*u)<eps | k>=N
-    u=u+(b/2)
+    for i=1:n
+        u(i)=u(i)+(b/2)
     k=k+1
 end
 
