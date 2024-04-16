@@ -43,3 +43,7 @@ for g=1:20
     yk=yk2
     yk=zk2
 end
+
+// Exercice 2
+
+// 1.
