@@ -64,12 +64,12 @@ endfunction
 // b=f(i/n+1)
 
 // 3.
-clear;
-u=0
+// clear;
+u=zeros(n,1)
 N=10
 eps=10**-8
 
-for i=1:n 
+for i=1:n
     b(i)=f(i/n+1)
 end
 
