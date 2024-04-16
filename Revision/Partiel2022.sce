@@ -45,10 +45,14 @@ for g=1:20
 end
 
 // Exercice 2
-
+clear;
 // 1.
-u=2.*eyes(n)
-minf=tril()
+n=5
+u=2.*eye(n,n)
+minf=tril(diag(-1.*ones(1,n-1),-1),-1)
+msup=triu(diag(-1.*ones(1,n-1),1),1)
+A=u+minf+msup
+disp(A)
 
 // 2.
 
