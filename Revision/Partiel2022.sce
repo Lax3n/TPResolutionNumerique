@@ -67,9 +67,11 @@ u=0
 N=100
 eps=10**-8
 
+
 while norm(b-A*u)<eps | k>=N
     u=u+(b/2)
 end
 
+disp(u)
 
 
