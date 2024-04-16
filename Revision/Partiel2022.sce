@@ -52,8 +52,8 @@ u=2.*eye(n,n)
 // minf=tril(diag(-1.*ones(1,n-1),-1),-1)
 // msup=triu(diag(-1.*ones(1,n-1),1),1)
 // A=u+minf+msup
-v=-ones(n-1,1)
-A=u+diag(v,1)+diag(v,-1)
+v=-ones(n-2,1)
+A=u+diag(v,2)+diag(v,-2)
 disp(A)
 
 // disp(A(3,2))
