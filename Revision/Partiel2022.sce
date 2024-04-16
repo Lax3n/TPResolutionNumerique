@@ -54,6 +54,8 @@ msup=triu(diag(-1.*ones(1,n-1),1),1)
 A=u+minf+msup
 disp(A)
 
+disp(A(3,2))
+
 // 2.
 
 
