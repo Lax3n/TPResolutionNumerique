@@ -47,3 +47,9 @@ end
 // Exercice 2
 
 // 1.
+u=eyes(n)
+v
+
+// 2.
+
+
