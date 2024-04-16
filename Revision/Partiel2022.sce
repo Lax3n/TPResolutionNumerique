@@ -60,13 +60,18 @@ function s=f(x)
     s=x.*(1-x)
 endfunction
 
-i=1
-b=f(i/n+1)
+// i=1
+// b=f(i/n+1)
 
 // 3.
 u=0
 N=10
 eps=10**-8
+
+for i=1:n 
+    b(i)=f(i/n+1)
+end
+
 
 k=0
 while norm(b-A*u)<eps | k>=N
