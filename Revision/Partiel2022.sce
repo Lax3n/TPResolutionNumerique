@@ -36,7 +36,10 @@ yk=y0
 zk=z0
 
 for g=1:20
-    xk=3.*xk+8.*yk+4.*zk
-    yk=5.*xk+16.*yk+8.*zk
-    zk=6.*xk+4.*yk+7.*zk
+    xk2=3.*xk+8.*yk+4.*zk
+    yk2=5.*xk+16.*yk+8.*zk
+    zk2=6.*xk+4.*yk+7.*zk
+    xk=xk2
+    yk=yk2
+    yk=zk2
 end
