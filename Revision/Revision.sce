@@ -1,12 +1,13 @@
 n=10
 
-function s=salut(2,t,z)
+function [s,t]=salut(n,t,z)
     disp(0:2:n)
     for i =0:2:n
-        disp(i)
+        // disp(i)
     end
-    disp(n)
+    // disp(n)
     s=i 
+    t=t
 endfunction
 
 
