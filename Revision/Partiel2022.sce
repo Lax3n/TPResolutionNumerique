@@ -95,3 +95,4 @@ disp(u)
 // xk est donc le vecteur solution de cette equation
 
 
+
